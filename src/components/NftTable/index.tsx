@@ -29,7 +29,7 @@ const NftTable = () => {
             <h3>Wishlist</h3>
             {listOfNfts.myFavorites.map((favorite: any) => {
               return (
-                <p className="favoriteText">
+                <p className="favoriteText" key={favorite.token_id}>
                   <span>
                     {favorite.name
                       ? `${favorite.name}, id: ${favorite.token_id} `
