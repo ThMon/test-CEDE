@@ -1,3 +1,7 @@
+.nftTableFullContainer {
+  display: flex;
+}
+
 @media only screen and (max-width: 500px) {
   .nftTableContainer {
     width: 400px;
@@ -22,6 +26,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+}
+
+.nftFavoriteContainer {
+  width: 250px;
+  background-color: #fafafa;
+  border: 1px solid white;
+  margin-top: 20px;
+  padding: 0 20px;
+  border-radius: 15px;
+  position: relative;
+  .favoriteText {
+    line-height: 24px;
+    text-align: left;
+    text-shadow: 0.5px 0.5px 2px #cecece;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .favoriteDeleteButton {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 6px;
+    }
+    .favoriteDeleteButton:hover {
+      color: red;
+    }
   }
 }
 

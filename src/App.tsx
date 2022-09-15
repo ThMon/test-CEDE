@@ -1,21 +1,19 @@
 import React from "react";
 import "./styles/App.scss";
-import SearchBar from "./components/SearchBar";
-import NftTable from "./components/NftTable";
+import Home from "./components/Home";
+import Search from "./components/Search";
+import Container from "./components/layout/container";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <header>
-        <SearchBar/>
-      </header>
-      <main>
-        <div className='appContainer'>
-          <div className='appTableContainer'>
-            <NftTable/>
-          </div>
-        </div>
-      </main>
+    <div className="App">
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+      </Container>
     </div>
   );
 }

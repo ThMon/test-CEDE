@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+  color: #69bb99;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.homeLogoContainer {
+  text-align: center;
+  margin: 25px;
+  img {
+    width: 200px;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+a.button-start {
+  background-color: #69bb99;
+  color: white;
+  text-decoration: none;
+  padding: 20px 10px;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}

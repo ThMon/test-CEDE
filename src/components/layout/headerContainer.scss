@@ -1,0 +1,25 @@
+.navContainer {
+  position: relative;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.5);
+  margin-bottom: 25px;
+  nav {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    a {
+      color: #69bb99;
+      margin: 0 20px;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #69bb99;
+    }
+  }
+  span {
+    position: absolute;
+    color: #69bb99;
+    top: 15px;
+    right: 25px;
+  }
+}
